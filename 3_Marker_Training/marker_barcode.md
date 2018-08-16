@@ -32,6 +32,7 @@ For example, the first row tells us that a 2D-barcode marker with a 3x3 matrix o
 In general, it is better to use the barcode type with the greatest possible Hamming distance, as this results in the lowest likelihood of one marker being misrecognized as a different marker.
 
 ##2D-Barcode Markers as Multi-Markers
+
 Multi-markers, not to be confused with the concept of multiple markers discussed above, are marker types that are made up of many sub-markers that are recognized and tracked as a single marker entity. This is opposed to recognizing and tracking multiple markers separately in a camera view. Patterns made up of a grid (matrix) of 2D-barcode markers are the default configuration for multi-marker sets, since they offer such radical performance improvements over other marker types with the use of multi-markers. Another advantage of multi-markers over traditional markers is that a multi-marker can still be recognized and tracked when some sub-markers are occluded from camera view.
 
 The default barcode dimension for 2D-barcode markers in ARToolKit is a 3x3 pattern. For 3x3 2D-barcodes, there are 64 rotationally unique pattern arrangements making the marker suitable for augmented reality - enough patterns for most tabletop AR applications. You will find “.png” graphic files representing the 64 2D-barcode patterns in the ARToolKit SDK download; see folder path “[downloaded ARToolKit SDK]/doc/patterns/Matrix code 3x3 (72dpi)/”. These files can be printed.
